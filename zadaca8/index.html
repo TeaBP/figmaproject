@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- META -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- FLEXSLIDER CSS -->
+	<link rel="stylesheet" href="plugins/flexslider/flexslider.css" type="text/css">
+	<!-- TABS CSS --> 
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+	<!-- JQUERY library 3.6.0 novi na kojem radi UI ali radi očito i flexslider --> 
+	<script type="text/javascript" src="js/jquery-360.js"></script>
+	<!-- TABS JQUERY -->
+	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+	<!-- FLEXSLIDER jquery -->
+	<script src="plugins/flexslider/jquery.flexslider.js"></script>
+	<script type="text/javascript" charset="utf-8">
+	  $(window).ready(function() {
+	    $('.flexslider').flexslider();
+	    $( "#tabs" ).tabs();
+	  });
+	</script>
+	<!-- LINK MainMenu-TAB -->
+	<script type="text/javascript" src="js/custom.js"></script>
+	<title>Zadaca 8</title>
+</head>
+<body>
+	<header id="home">
+		<div class="header">
+			<div class="container">
+				<div id="mainMenu">
+					<div id="logo">
+						<a href="#"><img src="img/logo.png"></a>
+					</div>
+					<div id="navBar">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#aboutUs">About Us</a></li>
+							<li><a href="#gallery">Gallery</a></li>
+							<li>
+								<div class="dropdown show">
+								  <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								    Fruits
+								  </a>
+
+								  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+								    <a id="tab1" class="dropdown-item" href="#tabs1" >Apple fruit</a>
+								    <a id="tab2" class="dropdown-item" href="#tabs2" onclick='$("#tab2").tabs( "select", "tabs-2" )'>Stone fruit</a>
+								    <a id="tab3" class="dropdown-item" href="#tabs3">Nuts</a>
+								    <a id="tab4" class="dropdown-item" href="#tabs4">Berries</a>
+								    <a id="tab5" class="dropdown-item" href="#tabs5">Subtropical fruits</a>
+								    <a id="tab6" class="dropdown-item" href="#tabs6">Tropical fruits</a>
+								  </div>
+								</div>
+							</li>
+							<li><a href="#form1">Contact Us</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="section1" id="home">
+		<div class="container">
+			<div class="divCol2">
+				<div class="contentCol2">
+					<div id="insideContent1">
+						<h1><span>Best</span><br>Fresh Red Apple</h1>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature</p>
+						<div class="divBuyBtt">
+							<a class="buyBtt" href="#">Buy Now</a>
+						</div>
+					</div>
+				</div>
+				<div class="contentCol2">
+					<img src="img/slider_img.png">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section1-2" id="aboutUs">
+		<div class="container">
+			<div class="divCol2">
+				<div class="contentCol2">
+					<img src="img/about_img.png">
+				</div>
+				<div id="insideContent2">
+					<h1>About our shop</h1>
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<div class="divBuyBtt">
+						<a class="readMoreBtt" href="#">Read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section2" id="gallery">
+		<div class="container">
+			<h1><span>Fruits</span> Gallery</h1>
+			<div class="flexslider">
+		  		<ul class="slides">
+				    <li>
+				      <img class="imgRadius" src="img/slide/apple-slide.jpg" />
+				    </li>
+				    <li>
+				      <img class="imgRadius" src="img/slide/banana-slide.jpg" />
+				    </li>
+				    <li>
+				      <img class="imgRadius" src="img/slide/kiwi-slide.jpg" />
+				    </li>
+				    <li>
+				      <img class="imgRadius" src="img/slide/lemon-slide.jpg" />
+				    </li>
+				    <li>
+				      <img class="imgRadius" src="img/slide/orange-slide.jpg" />
+				    </li>
+				    <li>
+				      <img class="imgRadius" src="img/slide/pineapple-slide.jpg" />
+				    </li>
+		  		</ul>
+			</div>
+		</div>
+	</section>
+	<section class="section3" id="sec3">
+		<div class="container">
+			<h1 id="section3H1">Our <span>Fruits</span></h1>
+			<div id="tabs">
+			  <ul>
+			    <li id="tabs1"><a href="#tabs-1">I. Apple fruit</a></li>
+			    <li id="tabs2"><a href="#tabs-2">II. Stone fruit</a></li>
+			    <li id="tabs3"><a href="#tabs-3">III. Nuts</a></li>
+			    <li id="tabs4"><a href="#tabs-4">IV. Berries</a></li>
+			    <li id="tabs5"><a href="#tabs-5">V. Subtropical fruit</a></li>
+			    <li id="tabs6"><a href="#tabs-6">VI. Tropical fruit</a></li>
+			  </ul>
+			  <div id="tabs-1">
+			    <div class="divCol3">
+			    	<div class="divFruitContent">
+			    		<img src="img/tabs/appletab.jpg">
+			    		<p><span>Apple</span></p>
+			    		<p>An apple is an edible fruit produced by an apple tree (Malus domestica)</p>
+			    		<a class="readBtt" href="https://en.wikipedia.org/wiki/Apple">Read more..</a>
+			    	</div>
+			    	<div class="divFruitContent">
+			    		<img src="img/tabs/peartab.jpg">
+			    		<p><span>Pear</span></p>
+			    		<p>Pears are fruits produced and consumed around the world, growing on a tree and harvested in the Northern Hemisphere in late summer into October.</p>
+			    		<a class="readBtt" href="https://en.wikipedia.org/wiki/Pear">Read more..</a>
+			    	</div>
+			    	<div class="divFruitContent">
+			    		<img src="img/tabs/quincetab.jpg">
+			    		<p><span>Apple</span></p>
+			    		<p>The quince is the sole member of the genus Cydonia in the family Rosaceae (which also contains apples and pears, among other fruits).</p>
+			    		<a class="readBtt" href="https://en.wikipedia.org/wiki/Quince">Read more..</a>
+			    	</div>
+			    </div>
+			  </div>
+			  <div id="tabs-2">
+			  	<div class="divCol3">
+				    <div class="divFruitContent">
+				    		<img src="img/tabs/peachtab.jpg">
+				    		<p><span>Peach</span></p>
+				    		<p>The peach (Prunus persica) is a deciduous tree native to the region of Northwest China between the Tarim Basin and the north slopes of the Kunlun Mountains, where it was first domesticated and cultivated.</p>
+				    		<a  class="readBtt" href="https://en.wikipedia.org/wiki/Peach">Read more..</a>
+				    	</div>
+				    	<div class="divFruitContent">
+				    		<img src="img/tabs/plumtab.jpg" >
+				    		<p><span>Plum</span></p>
+				    		<p>A plum is a fruit of some species in Prunus subg. Prunus. Mature plum fruits may have a dusty-white waxy coating that gives them a glaucous appearance.</p>
+				    		<a class="readBtt" class="readBtt" href="https://en.wikipedia.org/wiki/Plum">Read more..</a>
+				    	</div>
+				    	<div class="divFruitContent">
+				    		<img src="img/tabs/cherrytab.jpg" >
+				    		<p><span>Cherry</span></p>
+				    		<p>A cherry is the fruit of many plants of the genus Prunus, and is a fleshy drupe (stone fruit).</p>
+				    		<a class="readBtt" href="https://en.wikipedia.org/wiki/Cherry">Read more..</a>
+				    	</div>
+				    </div>
+			  </div>
+			  <div id="tabs-3">
+			  	<div class="divCol3">
+				    <div class="divFruitContent">
+				    		<img src="img/tabs/walnuttab.jpg" >
+				    		<p><span>Walnut</span></p>
+				    		<p>A walnut is the nut of any tree of the genus Juglans (family Juglandaceae), particularly the Persian or English walnut, Juglans regia.</p>
+				    		<a class="readBtt" class="readBtt" href="https://en.wikipedia.org/wiki/Walnut">Read more..</a>
+				    	</div>
+				    	<div class="divFruitContent">
+				    		<img src="img/tabs/hazlenuttab.jpg" >
+				    		<p><span>Hazlenut</span></p>
+				    		<p>The hazelnut is the fruit of the hazel tree and therefore includes any of the nuts deriving from species of the genus Corylus, especially the nuts of the species Corylus avellana.</p>
+				    		<a class="readBtt" class="readBtt" href="https://en.wikipedia.org/wiki/Hazlenut">Read more..</a>
+				    	</div>
+				    	<div class="divFruitContent">
+				    		<img src="img/tabs/almondtab.jpg">
+				    		<p><span>Almond</span></p>
+				    		<p>The almond (Prunus amygdalus, syn. Prunus dulcis) is a species of tree native to Iran and surrounding countries, but widely cultivated elsewhere.</p>
+				    		<a class="readBtt" class="readBtt" href="https://en.wikipedia.org/wiki/Almond">Read more..</a>
+				    	</div>
+				    </div>
+			  </div>
+			  <div id="tabs-4">
+			  	<div class="divCol3">
+				    <div class="divFruitContent">
+				    		<img src="img/tabs/strawberrytab.jpg">
+				    		<p><span>Strawberry</span></p>
+				    		<p>The garden strawberry is a widely grown hybrid species of the genus Fragaria, collectively known as the strawberries, which are cultivated worldwide for their fruit.</p>
+				    		<a class="readBtt" href="https://en.wikipedia.org/wiki/Strawberry">Read more..</a>
+				    	</div>
+				    	<div class="divFruitContent">
+				    		<img src="img/tabs/blackberrytab.jpg">
+				    		<p><span>Blackberry</span></p>
+				    		<p>The blackberry is an edible fruit produced by many species in the genus Rubus in the family Rosaceae, hybrids among these species within the subgenus Rubus, and hybrids between the subgenera Rubus and Idaeobatus.</p>
+				    		<a class="readBtt" href="https://en.wikipedia.org/wiki/Blackberry">Read more..</a>
+				    	</div>
+				    	<div class="divFruitContent">
+				    		<img src="img/tabs/blueberrytab.jpg">
+				    		<p><span>Blueberry</span></p>
+				    		<p>Blueberries are a widely distributed and widespread group of perennial flowering plants with blue or purple berries.</p>
+				    		<a class="readBtt" href="https://en.wikipedia.org/wiki/Blueberry">Read more..</a>
+				    	</div>
+				    </div>
+			  </div>
+			  <div id="tabs-5">
+			  	<div class="divCol3">
+				    <div class="divFruitContent">
+				    		<img src="img/tabs/tangerinetab.jpg">
+				    		<p><span>Tangerine</span></p>
+				    		<p>The tangerine is a type of orange. Its scientific name varies. It has been treated as a separate species under the name Citrus tangerina or Citrus x tangerina, or treated as a variety of Citrus reticulata, the mandarine orange.</p>
+				    		<a class="readBtt" href="https://en.wikipedia.org/wiki/Tangerine">Read more..</a>
+				    	</div>
+				    	<div class="divFruitContent">
+				    		<img src="img/tabs/orangetab.jpg">
+				    		<p><span>Orange</span></p>
+				    		<p>An orange is a fruit of various citrus species in the family Rutaceae it primarily refers to Citrus × sinensis, which is also called sweet orange, to distinguish it from the related Citrus × aurantium, referred to as bitter orange.</p>
+				    		<a class="readBtt" href="https://en.wikipedia.org/wiki/Orange_(fruit)">Read more..</a>
+				    	</div>
+				    	<div class="divFruitContent">
+				    		<img src="img/tabs/lemontab.jpg">
+				    		<p><span>Lemon</span></p>
+				    		<p>The lemon (Citrus limon) is a species of small evergreen tree in the flowering plant family Rutaceae, native to Asia, primarily Northeast India (Assam), Northern Myanmar or China.</p>
+				    		<a class="readBtt" href="https://en.wikipedia.org/wiki/Lemon">Read more..</a>
+				    	</div>
+				    </div>
+			  </div>
+			  <div id="tabs-6">
+			  	<div class="divCol3">
+				    <div class="divFruitContent">
+				    		<img src="img/tabs/bananatab.jpg">
+				    		<p><span>Banana</span></p>
+				    		<p>A banana is an elongated, edible fruit – botanically a berry – produced by several kinds of large herbaceous flowering plants in the genus Musa. In some countries, bananas used for cooking may be called "plantains", distinguishing them from dessert bananas.</p>
+				    		<a class="readBtt" href="https://en.wikipedia.org/wiki/Banana">Read more..</a>
+				    	</div>
+				    	<div class="divFruitContent">
+				    		<img src="img/tabs/pineappletab.jpg">
+				    		<p><span>Pineapple</span></p>
+				    		<p>The pineapple (Ananas comosus) is a tropical plant with an edible fruit and is the most economically significant plant in the family Bromeliaceae. The pineapple is indigenous to South America, where it has been cultivated for many centuries.</p>
+				    		<a class="readBtt" href="https://en.wikipedia.org/wiki/Pineapple">Read more..</a>
+				    	</div>
+				    	<div class="divFruitContent">
+				    		<img src="img/tabs/coconuttab.jpg">
+				    		<p><span>Coconut</span></p>
+				    		<p>TThe coconut tree (Cocos nucifera) is a member of the palm tree family (Arecaceae) and the only living species of the genus Cocos.</p>
+				    		<a class="readBtt" href="https://en.wikipedia.org/wiki/Coconut">Read more..</a>
+				    	</div>
+				    </div>
+			  	</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer1">
+		<div class="container">
+			<div id="divForm1">
+				<div id="divFooterH1">
+					<h1>Request a <span>Call Back</span></h1>
+				</div>
+				<form id="form1" action="https://formspree.io/f/xeqnopdj" method="POST">
+					<input class="fromBlock" id="name" type="name" name="name" value="" placeholder="Name" required>
+					<input class="fromBlock" id="email" type="email" name="email_replayto" value="" placeholder="E-mail" required>
+					<input class="fromBlock" id="phone" type="phone" name="phone" value="" placeholder="Phone" required>
+					<textarea class="fromBlock" id="message" name="message" placeholder="Message" required></textarea>
+					<button class="formBtt fromBlock" id="submit" type="submit">Send</button>
+				</form>
+				<div id="status"></div>
+			</div>
+		</div>
+	</footer>
+	<div id="footerEnd">
+		<div class="container">
+			<div class="divCol4">
+				<div id="footerContact">
+					<h1>Contact Us</h1>
+					<ul>
+						<li>Healing Center, 176 W Street name,<br> New York, NY</li>
+						<li>(+91) 987 654 3210</li>
+						<li>@gmail.com</li>
+					</ul>
+				</div>
+				<div id="footerPages">
+					<h1>Pages</h1>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#aboutUs">About Us</a></li>
+						<li><a href="#gallery">Gallery</a></li>
+						<li><a href="#tabs">Fruits</a></li>
+						<li><a href="#form1">Contact us</a></li>
+					</ul>
+				</div>
+				<div id="footerSocialMedia">
+					<h1>Social Media</h1>
+					<ul>
+						<li><img src="img/svg/facebook.svg"><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+						<li><img src="img/svg/instagram.svg"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+						<li><img src="img/svg/twitter.svg"><a href="https://www.Twitter.com" target="_blank">Twitter</a></li>
+						<li><img src="img/svg/youtube.svg"><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+						<li><img src="img/svg/tiktok.svg"><a href="https://www.tiktok.com" target="_blank">TikTok</a></li>
+					</ul>
+				</div>
+				<div id="footerNewslatter">
+					<h1>Newsletter</h1>
+					<input type="text" name="email" placeholder="Enter your Email">
+					<button id="nwsBtt" class="">Subscribe</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
